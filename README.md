@@ -544,7 +544,7 @@ In place of common selectors like class, id or attribute we can use `document.qu
   // Native
   el.cloneNode();
 
-  // For Deep clone , set param as `true`  
+  // For Deep clone , set param as `true`
   ```
 
 - [3.10](#3.10) <a name='3.10'></a> empty
@@ -640,8 +640,8 @@ Most of utilities are found by native API. Others advanced functions could be ch
 
   // Native
   function isWindow(obj) {
-		return obj != null && obj === obj.window;
-	}
+    return obj != null && obj === obj.window;
+  }
   ```
 
   + inArray
@@ -696,8 +696,8 @@ Most of utilities are found by native API. Others advanced functions could be ch
   // Native
   function isEmptyObject(obj) {
     for (let key in obj) {
-      return false;  
-    }  
+      return false;
+    }
     return true;
   }
   ```
@@ -883,10 +883,10 @@ Most of utilities are found by native API. Others advanced functions could be ch
 
   // Native
   function Globaleval(code) {
-  	var script = document.createElement('script');
-  	script.text = code;
+    const script = document.createElement('script');
+    script.text = code;
 
-  	document.head.appendChild(script).parentNode.removeChild(script);
+    document.head.appendChild(script).parentNode.removeChild(script);
   }
 
   // Use eval, but context of eval is current, context of $.Globaleval is global.
